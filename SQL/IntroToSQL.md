@@ -4,10 +4,10 @@
 
 ### What is a Database?
 
-- a database is a collection of integrated data or records
+- A database is a collection of integrated data or records
   - term “database” can refer to any collection of data items
   - a “record” is a representation of a physical or conceptual entity
-- a database consists of both data and metadata
+- A database consists of both data and metadata
   - metadata is information that describes the data structure inside the database
   - database stores metadata in a data dictionary that describes the columns, tables, and indexes
 - Database contains a description of its own structure
@@ -15,29 +15,29 @@
 
 ### Databases in More Detail
 
-- databases come in a variety of sizes
+- Databases come in a variety of sizes
   - as simple as standard collection of phone numbers
   - as complex as commercial-grade systems holding millions of records
-- personal database is designed for single users on a single computer
+- Personal database is designed for single users on a single computer
   - simple structure and small in size
-- public workgroup databases are designed for commercial use or a workgroup within an organization
+- Public workgroup databases are designed for commercial use or a workgroup within an organization
   - larger than a personal database and capable of handing a group of users accessing the same data at the same time
-- enterprise databases are designed for several hundred groups of users
+- Enterprise databases are designed for several hundred groups of users
   - model the flow of an entire organization
 
 ### What is Database Management?
 
-- databases are usually associated with software, allowing the data to be managed or queried
+- Databases are usually associated with software, allowing the data to be managed or queried
   - SQL Server
   - Microsoft Access
   - IBM DB2
   - MySQL
   - Oracle
-- a Database Management System (DBMS) is a set of programs used to provision databases and their associated applications and processes
+- A Database Management System (DBMS) is a set of programs used to provision databases and their associated applications and processes
 
 ### What is a Flat File System?
 
-- flat files
+- Flat files
   - provide minimal structure
   - collection of one data record after another, in an organized format
   - a list containing nothing but data
@@ -48,12 +48,12 @@
 
 ### Relevance of Databases and SQL
 
-- databases allow you to set up rules to keep data consistent and fault-tolerant
+- Databases allow you to set up rules to keep data consistent and fault-tolerant
   - organize data to retrieve upon command
   - enable you to break the data into parts
 - SQL is used to communicate with the database
   - language standard for management of relational databases referenced by ANSI
-- without communication to the database, the user would not be able to perform controlled tasks to update, retrieve, and manage the data
+- Without communication to the database, the user would not be able to perform controlled tasks to update, retrieve, and manage the data
 
 ## The Relation of Data and the Various Databases
 
@@ -65,10 +65,10 @@
 
 ### The Relational Model
 
-- all data is represented by tuples and grouped into relations
+- All data is represented by tuples and grouped into relations
   - a database managed in terms of the relational architecture is a relational database
-- primary model used around the world for data storage and processing
-- relational databases offer flexibility, are easier to maintain
+- Primary model used around the world for data storage and processing
+- Relational databases offer flexibility, are easier to maintain
   - structures that follow the hierarchical or network architecture have that structure hard-coded into the application
   - relational databases store data in tables that are largely independent of each other except for the relationship between them
 
