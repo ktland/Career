@@ -386,3 +386,11 @@ ALTER TABLE Customers
 ALTER TABLE Customers
     DROP CONSTRAINT PK_Customers
 ```
+
+## Deleting an Existing Table
+
+```sql
+DROP TABLE Test_Table_1
+```
+
+***BE CAREFUL!***
