@@ -318,3 +318,29 @@ CREATE TABLE Test_Table_1
 )
 GO
 ```
+
+## Adding Data Using INSERT Statement
+
+```sql
+--Verify records
+Select * from Test_Table_1
+
+
+--Insert values into explicit columns
+INSERT INTO Test_Table_1 (Col1, Col2)
+Values
+(1, 'Hello')
+
+
+--Insert values by position
+INSERT INTO Test_Table_1
+Values
+(2, 'Hi')
+
+
+--Insert multiple records at once
+INSERT INTO Test_Table_1
+Values
+(3, 'Hey')
+(4, 'Hi there')
+```
