@@ -221,3 +221,20 @@ Go
 |**DATE**|Stores day, year, month data values|
 |**TIME**|Stores seconds, minutes, hours data values|
 |**TIMESTAMP**|Stores the complete date from year, month, day, hour, minute, and second data values|
+
+## Ready to Create A Database
+
+- Logical Name
+  - database files
+  - everything that you store in the database is ultimately stored within a file
+
+### Creating A Database via Code
+
+```sql
+CREATE DATABASE My_TestDB
+ON PRIMARY
+(NAME = 'My_TestDB', FILENAME = 'C:\Databases\My_TestDB.mdf', SIZE = 5120KB, FILEGROWTH = 2048KB)
+LOG ON
+(NAME = 'My_TestDB', FILENAME = 'C:\Databases\My_TestDB.ldf', SIZE = 2048KB, FILEGROWTH = 20%)
+GO
+```
