@@ -22,5 +22,5 @@
 ## Need to Learn
 
 - Microsoft SQL
-- Powershell
+- PowerShell
 - Active Directory
