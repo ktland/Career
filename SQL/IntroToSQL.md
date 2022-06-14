@@ -394,3 +394,21 @@ DROP TABLE Test_Table_1
 ```
 
 ***BE CAREFUL!***
+
+## Quick Peek Using SELECT Statement
+
+```sql
+--Script for SelectTopNRows command from SSMS (SQL Server Management Studio)
+SELECT TOP 1000 [CustomerID]
+      ,[CompanyName]
+      ,[ContactName]
+      ,[ContactTitle]
+      ,[Address]
+      ,[City]
+      ,[Region]
+      ,[PostalCode]
+      ,[Country]
+      ,[Phone]
+      ,[Fax]
+FROM [northwind] [dbo] [Customers]
+```
