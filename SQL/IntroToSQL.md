@@ -370,3 +370,19 @@ CREATE TABLE Customers
 - `PRIMARY KEY` → type of constraint
 - `CLUSTERED` → indexed order of the values physically sorted by the `CustomerID` value
 - `(CustomerID)` → the field in which the constraint is being placed
+
+## Changing an Existing Table
+
+```sql
+--Use Alter Table to add a new column
+ALTER TABLE Customers ADD
+    MobilePhone varchar(15) NULL
+
+--Use Alter Table to remove a column
+ALTER TABLE Customers
+    DROP COLUMN MobilePhone
+
+--Use Alter Table to remove the primary key constraint
+ALTER TABLE Customers
+    DROP CONSTRAINT PK_Customers
+```
