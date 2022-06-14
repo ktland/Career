@@ -254,7 +254,7 @@ GO
 CREATE TABLE CUSTOMER
 (
   CustomerID INTEGER    NOT NULL,
-  FirstName  VarCHAR (15),
+  FirstName  VarCHAR (15), --number in parentheses indicates highest number of characters allowed
   LastName   VarCHAR (20)  NOT NULL,
   Street     VarCHAR (25),
   City       VarCHAR (20),
@@ -263,3 +263,44 @@ CREATE TABLE CUSTOMER
   Phone      CHAR (13)
 )
 ```
+
+### Key Points to Keep in Mind when Creating Tables
+
+- Ensure that every table in the database has at least *one* common column
+  - example: using the `CustomerID` column in another table called `Orders`
+  - this helps to relate one table to another with a *common identifier*
+- Identify all tables that will be used before creating them
+- Define the columns that each table will need
+- Give each table a primary key
+  - example: using the `CustomerID` column as a primary key
+- Refine each table to third normal form (3NF)
+  - ***RESEARCH THIRD NORMAL FORM***
+
+### Single and Multi-table Views
+
+- Single-table view
+  - useful when information exists in a single table
+  - example would be list of names and phone numbers of persons from one city
+
+```sql
+CREATE VIEW CITYNAME_CUST AS
+  SELECT CUSTOMER.FirstName,
+       CUSTOMER.LastName,
+     CUSTOMER.Phone
+     FROM CUSTOMER
+     WHERE CUSTOMER.City = 'CITYNAME'
+```
+
+- Multi-table View
+  - this requires more than one table and is useful when requiring relation between tables and retrieving information from tables that have commonalities
+
+|CUSTOMER TABLE|CityName_CUST View|
+|:-------------|:-----------------|
+|CustomerID    |                  |
+|FirstName    →|FirstName         |
+|LastName     →|LastName          |
+|Street        |                  |
+|City         →|City              |
+|State         |                  |
+|Zipcode       |                  |
+|Phone        →|Phone             |

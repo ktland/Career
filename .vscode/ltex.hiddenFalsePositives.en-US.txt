@@ -1,0 +1,2 @@
+{"rule":"MISSING_TO_BEFORE_A_VERB","sentence":"^\\QEnsure that every table in the database has at least one common column\nthis helps to relate one table to another with a common identifier\nIdentify all tables that will be used before creating them\nDefine the columns that each table will need\nGive each table a primary key\nRefine each table to third normal form (3NF)\\E$"}
+{"rule":"WHITESPACE_RULE","sentence":"^\\QCustomerID\\E$"}
