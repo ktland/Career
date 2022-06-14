@@ -344,3 +344,29 @@ Values
 (3, 'Hey'),
 (4, 'Hi there')
 ```
+
+## Creating More Complex Tables
+
+```sql
+CREATE TABLE Customers
+(
+  CustomerID int NOT NULL,
+  FirstName varchar(20) NOT NULL,
+  LastName varchar(30) NOT NULL,
+  Street varchar(15) NULL, --NULL is default and it isn't necessary to specify
+  City varchar(15) NULL,
+  State_Prov char(2),
+  PostalCode varchar(10) NULL,
+  Country varchar(20) NULL,
+  Phone varchar(15) NULL,
+
+--CONSTRAINT restricts the data that can be entered into any given column and disallows any duplication
+  CONSTRAINT PK_Customers PRIMARY KEY CLUSTERED (CustomerID)
+)
+```
+
+- `CONSTRAINT` → restricts the data that can be entered into any given column and disallows any duplication
+- `PK_Customers` → name of the `CONSTRAINT`
+- `PRIMARY KEY` → type of constraint
+- `CLUSTERED` → indexed order of the values physically sorted by the `CustomerID` value
+- `(CustomerID)` → the field in which the constraint is being placed
