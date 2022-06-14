@@ -304,3 +304,17 @@ CREATE VIEW CITYNAME_CUST AS
 |State         |                  |
 |Zipcode       |                  |
 |Phone        →|Phone             |
+
+## Tables by Example
+
+```sql
+USE My_TestDB
+GO
+
+CREATE TABLE Test_Table_1
+(
+    Col1 int NOT NULL,
+    Col2 varchar(10)
+)
+GO
+```
