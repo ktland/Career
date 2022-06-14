@@ -238,3 +238,28 @@ LOG ON
 (NAME = 'My_TestDB', FILENAME = 'C:\Databases\My_TestDB.ldf', SIZE = 2048KB, FILEGROWTH = 20%)
 GO
 ```
+
+## How to Create A Table
+
+- A table is a two-dimensional array consisting of rows and columns
+  - similar to an Excel spreadsheet
+  - create a table using the `SQL CREATE TABLE` command
+    - parameters include the name and data type of each column
+  - use the `ALTER TABLE` command to change the structure of the table
+  - `DROP` command can delete the table upon request
+
+### Table Creation Syntax Example
+
+```sql
+CREATE TABLE CUSTOMER
+(
+  CustomerID INTEGER    NOT NULL,
+  FirstName  VarCHAR (15),
+  LastName   VarCHAR (20)  NOT NULL,
+  Street     VarCHAR (25),
+  City       VarCHAR (20),
+  State      CHAR (2),
+  Zipcode    INTEGER,
+  Phone      CHAR (13)
+)
+```
