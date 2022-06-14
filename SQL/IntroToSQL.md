@@ -313,7 +313,7 @@ GO
 
 CREATE TABLE Test_Table_1
 (
-    Col1 int NOT NULL,
+    Col1 int NOT NULL, --NOT NULL = can't be left blank
     Col2 varchar(10)
 )
 GO
