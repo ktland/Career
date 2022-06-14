@@ -5,3 +5,4 @@ TINYINT
 VARCHAR
 VARBINARY
 Multitable
+Laserfiche
