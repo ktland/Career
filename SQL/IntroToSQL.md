@@ -341,6 +341,6 @@ Values
 --Insert multiple records at once
 INSERT INTO Test_Table_1
 Values
-(3, 'Hey')
+(3, 'Hey'),
 (4, 'Hi there')
 ```
