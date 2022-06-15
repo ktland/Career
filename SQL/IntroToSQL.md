@@ -412,3 +412,15 @@ SELECT TOP 1000 [CustomerID]
       ,[Fax]
 FROM [northwind] [dbo] [Customers]
 ```
+
+## Learning the NULL Statement
+
+```sql
+--Select all records
+Select * from Customers
+
+--Find those with null values for the Region
+Select CustomerID, City, Region
+From Customers
+Where Region IS NULL
+```
