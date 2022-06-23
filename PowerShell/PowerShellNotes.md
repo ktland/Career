@@ -20,4 +20,4 @@
   - searches for all cmdlets whose noun part starts with `a-noun`
 - `-Verb` flag targets the part of the command name that's related to the verb
   - the `-Verb` and `-Noun` flags can be combined to create a more detailed search query and type
-  - example: `Get-Command -Verb Get - Noun a-noun*`
+  - example: `Get-Command -Verb Get -Noun a-noun*`
